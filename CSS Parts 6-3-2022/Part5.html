@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>mymove</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(194, 151, 10);
+            border-radius: 50%;
+            border: black solid 5px;
+            position: relative;
+            animation: mymove 1s infinite;
+            margin-top: 20%;
+            animation-timing-function: linear;
+        }
+        
+        @keyframes mymove {
+            0% {
+                left: 0px;
+            }
+            25% {
+                left: 100px;
+            }
+            50% {
+                left: 300px;
+            }
+            70% {
+                left: 100px;
+            }
+            100% {
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
