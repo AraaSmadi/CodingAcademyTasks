@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>linear gradient</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation-name: r;
+            animation-duration: 4s;
+            border-radius: 10px;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes r {
+            0% {
+                background-image: linear-gradient(rgb(223, 158, 39), rgb(216, 96, 200), rgb(39, 155, 116));
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-image: linear-gradient(rgb(85, 35, 223), rgb(60, 163, 189), rgb(16, 180, 16));
+                left: 200px;
+                top: 0px;
+            }
+            30% {
+                background-image: linear-gradient(rgb(120, 145, 150), rgb(109, 236, 119), rgb(180, 164, 16));
+            }
+            50% {
+                background-image: linear-gradient(rgb(187, 37, 57), rgb(170, 192, 141), rgb(114, 108, 21));
+                left: 200px;
+                top: 200px;
+            }
+            60% {
+                background-image: linear-gradient(rgb(197, 169, 243), rgb(215, 231, 169), rgb(148, 19, 207));
+            }
+            75% {
+                background-image: linear-gradient(rgb(121, 108, 83), rgb(74, 45, 128), rgb(20, 64, 100));
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                background-image: linear-gradient(rgb(163, 125, 54), rgb(216, 96, 200), rgb(194, 197, 28));
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
