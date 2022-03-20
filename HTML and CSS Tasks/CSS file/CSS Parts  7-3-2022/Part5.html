@@ -13,31 +13,33 @@
             margin: 0%;
         }
         
-        #container {
+        #contianer {
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: 100px 200px;
+            grid-template-columns: repeat(3, calc(100%/3));
+            grid-template-rows: 300px 300px 300px;
         }
         
-        img {
-            width: 30%;
-            height: 20;
+        @media screen and (min-width: 480px) and (max-width: 768px) {
+            #contianer {
+                grid-template-columns: repeat(2, calc(100%/2));
+                grid-template-rows: 300px 300px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div id="contaniner">
-        <div class="image-item">
-            <div class="image"><img src="image/original.jpg" alt=""></div>
-            <div class="image"><img src="image/original.jpg" alt=""></div>
-            <div class="image"><img src="image/original.jpg" alt=""></div>
-            <div class="image"><img src="image/original.jpg" alt=""></div>
-            <div class="image"><img src="image/original.jpg" alt=""></div>
-            <div class="image"><img src="image/original.jpg" alt=""></div>
-            <div class="image"><img src="image/original.jpg" alt=""></div>
-            <div class="image"><img src="image/original.jpg" alt=""></div>
-        </div>
+    <div id="contianer">
+
+        <div class="image1"><img src="image/original.jpg" alt=""></div>
+        <div class="image2"><img src="image/original.jpg" alt=""></div>
+        <div class="image3"><img src="image/original.jpg" alt=""></div>
+        <div class="image4"><img src="image/original.jpg" alt=""></div>
+        <div class="image5"><img src="image/original.jpg" alt=""></div>
+        <div class="image"><img src="image/original.jpg" alt=""></div>
+        <div class="image"><img src="image/original.jpg" alt=""></div>
+        <div class="image"><img src="image/original.jpg" alt=""></div>
+
     </div>
 </body>
 
